@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @font-face {
+    font-family: 'Liberation Mono';
+    src: url('fonts/Tajawal-Regular.ttf');
+  }
+
+  html, body { background:url('ps4.jpg');
+      background-size: 100% 100%;
+      background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Liberation Mono', monospace;
+   
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 6px #00ccff, 0 0 10px #004466;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+   
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 6px #00ccff, 0 0 10px #004466;
+    letter-spacing: 1px;
+  }
+
+  #message {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 0 0 6px #00ccff, 0 0 10px #004466;
+    letter-spacing: 1px;}
+
+  #message span {
+    color: #ff4f87;
+  }
+
+  #spinner {
+    margin-top: 25px;
+    border: 5px solid #ffffff;
+    border-top: 5px solid #00ffee;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #console {
+    display: none;
+  }
+
+  #footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: 'Liberation Mono', monospace;
+    text-shadow: 0 0 6px #00ccff;
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0.9;
+  }
+
+  body.activated #message {
+    animation: none;
+    color: #00ff88;
+    text-shadow: none;
+  }
+
+  /* Animations */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes pulseGlow {
+    0% {
+      opacity: 0.6;
+      text-shadow: 0 0 4px #00ffe1, 0 0 8px #00ffe1;
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 10px #00ffe1, 0 0 18px #00ffe1;
+    }
+  }
+
+  @keyframes fadeZoomIn {
+    0% { opacity: 0; transform: scale(0.96); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+
+
+    <title>PS4 9.00 NoUSB Exploit | By MOHAMED GABER</title>
+    <script>
+        function showMessage(msg) {
+            document.getElementById("message").innerHTML = msg;
+        }
+    </script>
+</head>
+    <body>
+          <script>
+       if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+      </script>
+        </style>
+        <div class="container">
+            <div class="header">
+                <h1>PS4 9.00 صفحة تهكير</h1>
+            </div>
+
+  <div id="console"></div>
+  <h2>تفعيل مباشر بدون الحاجة إلى فلاش</h2>
+  <h2>الهين العربي</h2>
+  <div id="message">جارِ التفعيل - يرجى الأنتظار</div>
+  <div id="spinner"></div>
+  
+
+        <pre id='console'></pre>
+        <footer id="footer">برمجة و تطوير : محمد جابر</footer>
+
+    </body>
+    <script src="loader.js"></script>
+    <script type=module src="alert.js"></script>
+</html>
